@@ -24,5 +24,10 @@ namespace GuiAppforCalulateSworDamage
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
