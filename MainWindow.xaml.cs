@@ -34,9 +34,9 @@ namespace GuiAppforCalulateSworDamage
         {
             sword.Roll = random.Next(1, 7) + random.Next(1, 7) + random.Next(1, 7);
             bool chboxM = false;
-            chboxM = (bool)ChBoxMagiczny.IsChecked!;
+            chboxM = (bool)ChBoxMagiczny.IsChecked.Value;
             bool chboxP = false;
-            chboxP = (bool)ChBoxPlonacy.IsChecked!;
+            chboxP = (bool)ChBoxPlonacy.IsChecked.Value;
             sword.SetMagic(chboxM);
             sword.SetFlaming(chboxP);
             TBObrazenia.Text = "Rzut: " + sword.Roll.ToString() + " punkty obrazen: " + sword.Damage.ToString();
