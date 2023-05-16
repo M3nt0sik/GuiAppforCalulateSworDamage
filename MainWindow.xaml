@@ -38,7 +38,7 @@
             </CheckBox.RenderTransform>
         </CheckBox>
         <Button x:Name="Przycisk" Content="Wykonaj rzut" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontSize="48" Grid.ColumnSpan="2" Width="600" Height="70" Click="Button_Clicked"/>
-        <TextBlock x:Name="TBObrazenia" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="41" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="103" FontSize="20" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,0,7,0"><Run Language="pl-pl" Text="Obrazenia"/></TextBlock>
+        <TextBlock x:Name="TBObrazenia" Grid.ColumnSpan="2" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,0,7,0"><Run Language="pl-pl" Text="Obrazenia"/></TextBlock>
 
 
 

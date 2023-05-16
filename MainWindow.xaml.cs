@@ -32,12 +32,14 @@ namespace GuiAppforCalulateSworDamage
 
         private void Button_Clicked(object sender, RoutedEventArgs e)
         {
+            sword.Roll = random.Next(1, 7) + random.Next(1, 7) + random.Next(1, 7);
             bool chboxM = false;
-             chboxM = (bool)ChBoxMagiczny.IsChecked!;
+            chboxM = (bool)ChBoxMagiczny.IsChecked!;
             bool chboxP = false;
             chboxP = (bool)ChBoxPlonacy.IsChecked!;
             sword.SetMagic(chboxM);
             sword.SetFlaming(chboxP);
+            TBObrazenia.Text = "Rzut: " + sword.Roll.ToString() + "punkty obrazen: " + sword.Damage.ToString();
 
         }
     }
