@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsloleAppTOCalculationsDamageForOscar;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,14 +20,24 @@ namespace GuiAppforCalulateSworDamage
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
+        {
+        Random random = new Random();
+        SwordDamage sword = new SwordDamage();
+
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void Button_Clicked(object sender, RoutedEventArgs e)
         {
+            bool chboxM = false;
+             chboxM = (bool)ChBoxMagiczny.IsChecked!;
+            bool chboxP = false;
+            chboxP = (bool)ChBoxPlonacy.IsChecked!;
+            sword.SetMagic(chboxM);
+            sword.SetFlaming(chboxP);
 
         }
     }

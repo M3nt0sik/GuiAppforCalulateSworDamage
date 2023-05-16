@@ -33,7 +33,7 @@ namespace ConsloleAppTOCalculationsDamageForOscar
             }
             CalculateDamage();
         }
-        public void SetFlamingDamage(bool isFlaming)
+        public void SetFlaming(bool isFlaming)
         {
             CalculateDamage();
             if (isFlaming)
